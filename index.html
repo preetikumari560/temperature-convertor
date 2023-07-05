@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp. Convertor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Temperature convertor</h1>
+<select name="" id="fromSelect" onchange="convertTemperature()">
+<option value="farenheit">Farenheit</option>
+<option value="celcius">Celcius</option>
+<option value="kelvin">Kelvin</option>
+</select>
+<input type="number" id="inputTemp" oninput="convertTemperature()" placeholder="What's the temperature......">
+<select name="" id="toSelect" onchange="convertTemperature()">
+<option value="farenheit"  >Farenheit</option>
+<option value="celcius">Celcius</option>
+<option value="kelvin" >Kelvin</option>
+</select>
+<div class="row">
+<h3>Temperature Is :</h3>
+<h3 id="outputTemp"></h3>
+</div>
+</div>
+</body>
+
+<footer>
+<script src="index.js">
+</script>
+</footer>
+</html>
